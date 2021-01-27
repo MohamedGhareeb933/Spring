@@ -1,0 +1,12 @@
+package com.luv2code.springdemo.ExceotionHandle;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class ExceptionHandler {
+
+	@ExceptionHandler
+	public  ResponseEntity<> handleError() {
+		return null;
+	}
+}

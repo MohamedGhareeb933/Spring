@@ -1,0 +1,15 @@
+
+n
+java:S1128";Remove this unused import 'javax.annotation.PostConstruct'.(›ÅÁ8®­Ó´ï.HüRMINORZ
+CODE_SMELL
+Š
+java:S1128"RRemove this unused import 'org.springframework.web.bind.annotation.DeleteMapping'.(­ìÎªşÿÿÿÿ8µŠùĞï.HRMINORZ
+CODE_SMELL
+c
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8®­Ó´ï.HıRMINORZ
+CODE_SMELL
+~
+java:S4684?"@Replace this persistent entity with a simple POJO or DTO object.(—áêüÿÿÿÿ8Şş¹Ïï.HÖRCRITICALZVULNERABILITY
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8®­Ó´ï.HşRMINORZ
+CODE_SMELL

@@ -1,0 +1,7 @@
+package com.example.springboot.thymeleafdemo.service;
+
+public class EmployeeService {
+	
+	public List<Employee> getEmployeeList();
+
+}

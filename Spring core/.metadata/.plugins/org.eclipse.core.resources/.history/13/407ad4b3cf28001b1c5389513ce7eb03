@@ -1,0 +1,5 @@
+package com.mohamed.aopdemo.service;
+
+public class FortuneService {
+
+}

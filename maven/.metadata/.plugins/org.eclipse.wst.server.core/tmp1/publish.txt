@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Dec 27 03:09:51 EET 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\M.DESKTOP-G2KL2U1\\.m2\\repository\\org\\springframework\\spring-web\\5.2.5.RELEASE\\spring-web-5.2.5.RELEASE.jar=WEB-INF/lib/spring-web-5.2.5.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\M.DESKTOP-G2KL2U1\\.m2\\repository\\org\\springframework\\spring-web\\5.2.8.RELEASE\\spring-web-5.2.8.RELEASE.jar=WEB-INF/lib/spring-web-5.2.8.RELEASE.jar

@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2827265260.index
+\solution-code-spring-rest-demo-POJOs-to-JSON\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3350374373.index
+\spring-crm-rest-security\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3388761468.index
+\crm-web-app-rest-client-db\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\361901202.index
+\solution-code-spring-rest-demo-POJOs-to-JSON-with-ID\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4195875564.index
+\solution-code-spring-rest-demo-Exception-handling\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2083232521.index
+\crm-web-app-rest-client-demo\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3464423058.index
+\spring-crm-rest-demo\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3945093241.index
+\crm-web-app-rest-client-demo\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3560446499.index
+\crm-web-app-rest-client-db\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\905164509.index
+\solution-code-spring-rest-demo-hello-world\src\main\java
+D:\Apps\Git Repos\spring\REST\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\902742726.index
+\helloRest\src\main\java

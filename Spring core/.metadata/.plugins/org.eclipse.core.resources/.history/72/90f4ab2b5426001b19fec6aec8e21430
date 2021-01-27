@@ -1,0 +1,35 @@
+package com.mohamed.aopdemo.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+@Order(2)
+@Aspect
+@Component
+public class MyDemoLogginAspect {
+
+	/*
+	@Pointcut("execution(* com.mohamed.aopdemo.dao.MemberShipDAO.*(..))") 
+	public void pointcutMemberShipDAO() { }
+	
+
+	@Pointcut("execution(* com.mohamed.aopdemo.dao.MemberShipDAO.get*(..))") 
+	public void getter() { }
+	
+	@Pointcut("execution(* com.mohamed.aopdemo.dao.MemberShipDAO.set*(..))") 
+	public void setter() { }
+	
+	
+	@Pointcut("pointcutMemberShipDAO() && !(getter() || setter())")
+	public void ApplyNoGetterSetter() { }
+	*/
+	
+	@Before("execution(* com.mohamed.aopdemo.aspect.ApplyNoGetterSetter())")
+	public void performAnalytics() {
+		System.out.println("@Before perform Analytics");
+	}
+	
+}

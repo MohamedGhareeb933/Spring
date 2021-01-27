@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ThymeleafdemoApplication<thymeleafdemo-employees-crud-security-with-jdbc-authentication>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.luv2code.springboot.thymeleafdemo.ThymeleafdemoApplication",
+            "projectName": "thymeleafdemo-employees-crud-security-with-jdbc-authentication",
+            "args": ""
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+package com.mohamed.springdemo.aspect;
+
+import java.util.logging.Logger;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+
+@Aspect
+@Component
+public class LoggingAspect {
+	
+	private Logger logger = Logger.getLogger(getClass().getName());
+	
+	@Pointcut("execution()")
+	private void ControllerPackage() {
+		
+	}
+}

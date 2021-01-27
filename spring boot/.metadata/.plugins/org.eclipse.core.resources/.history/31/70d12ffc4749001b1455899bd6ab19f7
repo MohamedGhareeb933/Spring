@@ -1,0 +1,10 @@
+package Rest.HelloRest.HelloRest;
+
+@SpringBootApplication
+public class HelloRestApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HelloRestApplication.class, args);
+	}
+
+}

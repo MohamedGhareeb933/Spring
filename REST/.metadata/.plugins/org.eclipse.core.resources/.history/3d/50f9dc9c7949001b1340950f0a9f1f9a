@@ -1,0 +1,10 @@
+package com.luv2code.springdemo.student;
+
+public class Student {
+	
+	private firstName;
+	private secondName;
+	
+	
+
+}

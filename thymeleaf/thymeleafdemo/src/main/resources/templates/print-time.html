@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Insert title here</title>
+
+	<!--  reference CSS file  -->
+	<link rel="stylesheet" 
+			th:href="@{css/demo.css}" />
+			
+</head>
+<body>
+	<p th:text="'the time is: ' + ${theDate}"  class="funny"/>
+</body>
+</html>

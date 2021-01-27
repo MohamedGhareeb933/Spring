@@ -1,0 +1,57 @@
+package com.luv2code.springdemo.rest;
+
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.luv2code.springdemo.ExceotionHandle.ThrowRuntimeExcpetion;
+import com.luv2code.springdemo.entity.Customer;
+import com.luv2code.springdemo.service.CustomerService;
+
+@RestController
+@RequestMapping("/api")
+public class CustomerRestController {
+
+	@Autowired
+	private CustomerService customerService;
+	
+	@PostConstruct
+	private long customerSize() {
+		return customerService.getCustomers().size();
+	}
+	
+	@GetMapping("/customers")
+	public List<Customer> getListCustomers() {
+		return customerService.getCustomers();
+	}
+	
+	@GetMapping("/customer/{customerId}")
+	public Customer getCustomer(@PathVariable("customerId") int customerId) {
+		
+		// jackson will return empty json which mean null Customer instance in case the customer not found
+		// you can do if customerInstance == null
+		if(customerId >  customerSize() || customerId < 0) {
+			throw new ThrowRuntimeExcpetion("unable to find customer " + customerId);
+		}
+		return customerService.getCustomer(customerId);
+	}
+	
+	@PostMapping("customer/add")
+	public Customer addCustomer(@RequestBody Customer theCustomer) {
+		
+		// initialize Id of Customer to 0 or null to save new Customer
+		theCustomer.setId(0);
+		
+		return theCustomer;
+	} 
+	
+}
+

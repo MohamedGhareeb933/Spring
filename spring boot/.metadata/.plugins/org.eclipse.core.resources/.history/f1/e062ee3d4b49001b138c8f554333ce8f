@@ -1,0 +1,15 @@
+package helloSpringBoot;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@Requestmapping("/test")
+public class SayHelloSpringBoot {
+	
+	@GetMapping("/helloRest")
+	public String sayHelloRest() {
+		return "hellor Rest Controller";
+	}
+
+}

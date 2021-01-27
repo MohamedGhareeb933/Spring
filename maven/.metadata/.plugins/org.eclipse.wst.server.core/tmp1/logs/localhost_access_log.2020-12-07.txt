@@ -1,0 +1,15 @@
+127.0.0.1 - - [07/Dec/2020:04:15:37 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:15:38 +0200] "GET /spring-security-demo-07-jdbc-plaintext/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:15:40 +0200] "GET /spring-security-demo-07-jdbc-plaintext/showMyLoginPage HTTP/1.1" 200 2546
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:15:57 +0200] "POST /spring-security-demo-07-jdbc-plaintext/authenticateTheUser HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:15:57 +0200] "GET /spring-security-demo-07-jdbc-plaintext/ HTTP/1.1" 200 594
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:13 +0200] "POST /spring-security-demo-07-jdbc-plaintext/logout HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:13 +0200] "GET /spring-security-demo-07-jdbc-plaintext/showMyLoginPage?logout HTTP/1.1" 200 2700
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:19 +0200] "POST /spring-security-demo-07-jdbc-plaintext/authenticateTheUser HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:19 +0200] "GET /spring-security-demo-07-jdbc-plaintext/ HTTP/1.1" 200 769
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:45 +0200] "POST /spring-security-demo-07-jdbc-plaintext/logout HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:45 +0200] "GET /spring-security-demo-07-jdbc-plaintext/showMyLoginPage?logout HTTP/1.1" 200 2700
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:52 +0200] "POST /spring-security-demo-07-jdbc-plaintext/authenticateTheUser HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:52 +0200] "GET /spring-security-demo-07-jdbc-plaintext/ HTTP/1.1" 200 779
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:54 +0200] "POST /spring-security-demo-07-jdbc-plaintext/logout HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2020:04:16:54 +0200] "GET /spring-security-demo-07-jdbc-plaintext/showMyLoginPage?logout HTTP/1.1" 200 2700

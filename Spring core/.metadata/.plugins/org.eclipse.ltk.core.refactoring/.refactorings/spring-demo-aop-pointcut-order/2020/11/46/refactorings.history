@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyDemoLogginAspect.java&apos; to &apos;spring-demo-aop-pointcut-order/src/com.mohamed.aopdemo.aspect&apos;&#x0D;&#x0A;- Original project: &apos;spring-demo-aop-pointcut-order&apos;&#x0D;&#x0A;- Destination element: &apos;spring-demo-aop-pointcut-order/src/com.mohamed.aopdemo.aspect&apos;&#x0D;&#x0A;- Original element: &apos;com.mohamed.aopdemo.aspect.MyDemoLogginAspect.java&apos;" description="Copy compilation unit" destination="/src&lt;com.mohamed.aopdemo.aspect" element1="/src&lt;com.mohamed.aopdemo.aspect{MyDemoLogginAspect.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1605341485992" units="1" version="1.0"/>
+</session>

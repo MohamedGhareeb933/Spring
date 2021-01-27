@@ -1,0 +1,2 @@
+
+<a href="${pageContext.request.contextPath}/customer/list" >CRM Page</a>

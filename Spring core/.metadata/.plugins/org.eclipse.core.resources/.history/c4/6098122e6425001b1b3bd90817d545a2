@@ -1,0 +1,6 @@
+package com.mohamed.aopdemo.dao;
+
+@Component
+public class AccountDAO {
+
+}

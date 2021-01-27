@@ -1,0 +1,7 @@
+package helloSpringBoot;
+
+@RestController
+@RequestMapping("/sayHello")
+public class SayHelloSpringBoot {
+
+}

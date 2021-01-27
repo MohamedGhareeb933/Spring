@@ -1,0 +1,22 @@
+package com.mohamed.aopdemo;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.mohamed.aopdemo.dao.AccountDAO;
+import com.mohamed.aopdemo.dao.MemberShipDAO;
+
+public class MainAppDemo {
+	public static void main( String[] args) {
+		
+		AnnotationConfigApplicationContext Context = 
+				new AnnotationConfigApplicationContext(demoConfig.class);
+		
+		AccountDAO account = Context.getBean("accountDAO" , AccountDAO.class);
+		MemberShipDAO membership = Context.getBean("" , MemberShipDAO.class)
+		
+		account.addAccount();
+		
+		Context.close();
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.example.springboot.thymeleafdemo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.springboot.thymeleafdemo.entity.Employee;
+
+@Service
+public class EmployeeServiceDao implements EmployeeService {
+
+	@Override
+	public List<Employee> getEmployeeList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getSingleEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee saveEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

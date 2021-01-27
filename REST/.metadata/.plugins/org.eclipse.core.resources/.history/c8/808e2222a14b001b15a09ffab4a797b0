@@ -1,0 +1,18 @@
+package com.luv2code.springdemo.ExceotionHandle;
+
+public class ThrowRuntimeExcpetion extends RuntimeException{
+
+	public ThrowRuntimeExcpetion(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	public ThrowRuntimeExcpetion(String message) {
+		super(message);
+	}
+
+	public ThrowRuntimeExcpetion(Throwable cause) {
+		super(cause);
+	}
+
+	
+}

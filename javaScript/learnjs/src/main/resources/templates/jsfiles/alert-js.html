@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> js first project </title>
+    <script type="text/javascript" th:src="@{/javascript/alert.js}"></script>
+</head>
+
+<body>
+
+        <!-- print an alert when we enter the page-->
+
+        <script>
+            alert("hello js");
+        </script>
+
+        <br>
+        <input type="button" class="button_pw" value="alert" onclick="popAlert();">
+        <br><br>
+        <hr>
+        <br>
+        <input type="button" value="write" onclick="writedocument();">
+        <br><br>
+        <hr>
+        <br>
+
+        <script> promptWindow(); </script>
+        <script> confirmModal(); </script>
+
+        
+
+</body>
+
+</html>

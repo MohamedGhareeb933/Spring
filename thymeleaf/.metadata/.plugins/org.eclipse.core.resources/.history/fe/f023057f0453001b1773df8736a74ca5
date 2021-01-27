@@ -1,0 +1,5 @@
+package com.example.springboot.thymeleafdemo.dao;
+
+public interface EmployeeDao extends JpaRepository<Employee, Integer> {
+
+}

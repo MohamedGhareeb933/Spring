@@ -1,0 +1,5 @@
+package com.example.springboot.thymeleafdemo.entity;
+
+public class Employee {
+
+}

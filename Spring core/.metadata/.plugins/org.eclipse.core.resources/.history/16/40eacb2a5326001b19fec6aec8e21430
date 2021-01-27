@@ -1,0 +1,7 @@
+package com.mohamed.aopdemo.aspect;
+
+@Aspect
+@Component
+public class AOPExpression {
+
+}

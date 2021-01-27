@@ -1,0 +1,18 @@
+package com.mohamed.aopdemo.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MemberShipDAO {
+
+	public String addMembership() {
+		
+		System.out.println(getClass() + " add Account to MembershipDAO");
+		
+		return " ";
+	}
+	
+	public void setMembership() {
+		System.out.println("MemberShip" + "set Membership");
+	}
+}

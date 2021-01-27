@@ -1,0 +1,5 @@
+package com.mohamed.aopdemo.aspect.copy;
+
+public class MyDemoLogginAspect {
+
+}
