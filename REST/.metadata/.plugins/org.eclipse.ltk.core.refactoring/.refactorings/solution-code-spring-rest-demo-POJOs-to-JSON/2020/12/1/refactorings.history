@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.luv2code.springdemo.student.student&apos; to &apos;Student&apos;&#x0D;&#x0A;- Original project: &apos;solution-code-spring-rest-demo-POJOs-to-JSON&apos;&#x0D;&#x0A;- Original element: &apos;com.luv2code.springdemo.student.student&apos;&#x0D;&#x0A;- Renamed element: &apos;com.luv2code.springdemo.student.Student&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;student&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luv2code.springdemo.student{student.java[student" matchStrategy="1" name="Student" qualified="false" references="true" similarDeclarations="false" stamp="1609207193915" textual="false" version="1.0"/>
-</session>

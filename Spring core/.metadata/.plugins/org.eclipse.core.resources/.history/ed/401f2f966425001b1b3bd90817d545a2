@@ -1,8 +1,0 @@
-package com.mohamed.aopdemo;
-
-@Configurtion
-@EnableAspectJAutoProxy
-@ComponentScan("com.mohamed.aopdemo")
-public class demoConfig {
-
-}

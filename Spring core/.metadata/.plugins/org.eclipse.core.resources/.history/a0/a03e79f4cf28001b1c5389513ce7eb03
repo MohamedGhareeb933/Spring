@@ -1,6 +1,0 @@
-package com.mohamed.aopdemo.service;
-
-public class FortuneService {
-
-	TimeUnit.SECOND.sleep(5);
-}

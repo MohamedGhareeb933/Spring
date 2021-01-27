@@ -1,9 +1,0 @@
-package com.luv2code.springdemo.restController;
-
-public class StudentErrorResponse {
-	
-	private String messege;
-	private int time;
-	private int status;
-
-}

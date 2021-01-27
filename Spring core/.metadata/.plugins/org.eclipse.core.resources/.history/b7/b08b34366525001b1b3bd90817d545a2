@@ -1,9 +1,0 @@
-package com.mohamed.aopdemo;
-
-public class MainAppDemo {
-	public static void main( String[] args) {
-		
-		AnnotationConfigApplicationContext Context = new AnnotationConfigApplicationContext(demoConfig.class)
-	}
-
-}

@@ -1,9 +1,0 @@
-package helloSpringBoot;
-
-import org.springframework.boot.SpringApplication;
-
-public static void main(String[] args) {
-	
-}
-
-}

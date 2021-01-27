@@ -1,7 +1,0 @@
-
-Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µ„íÈùÿÿÿÿHúRMINORZ
-CODE_SMELL
-r
-java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(ØÐÒ¨HûRCRITICALZVULNERABILITY
-w
-java:S4684)"@Replace this persistent entity with a simple POJO or DTO object.(îÿ‰÷ûÿÿÿÿHüRCRITICALZVULNERABILITY

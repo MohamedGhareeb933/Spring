@@ -1,3 +1,0 @@
-<%
-	Responose.Redirect ("customer/list");
-%>
