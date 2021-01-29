@@ -49,7 +49,8 @@ function conversion() {
     document.write("value type after conversion: " + typeof value + "<br>");
 
     // converts non number into number
-    let value = +true;
+    value = +true;
+    console.log("value is: " + value);
 
 }
 

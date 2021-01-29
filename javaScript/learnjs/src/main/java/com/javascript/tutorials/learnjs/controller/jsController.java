@@ -17,4 +17,9 @@ public class jsController {
     public String vars() {
         return "jsfiles/vars-js";
     }
+
+    @GetMapping("/objects")
+    public String objects() {
+        return "jsfiles/object-js";
+    }
 }
