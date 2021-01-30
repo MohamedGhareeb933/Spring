@@ -22,7 +22,6 @@ document.write(info.isActive + "<br>");
 
 document.write(info.lastName + "<br>");
 
-delete info.lastName;
 
 document.write(info.lastName + "<br>");
 
@@ -36,6 +35,15 @@ document.write("age" in userObject);
 
 
 iterateInfo();
+
+
+delete info.lastName;
+
+
+document.write("<br> <br>");
+
+document.write(cloneObject().isActive);
+
 
 </script>
 

@@ -10,16 +10,16 @@ public class jsController {
     
     @GetMapping("/alert")
     public String sayHello() {
-        return "jsfiles/alert-js";
+        return "thHtml/alert-js";
     }
 
     @GetMapping("/vars")
     public String vars() {
-        return "jsfiles/vars-js";
+        return "thHtml/vars-js";
     }
 
     @GetMapping("/objects")
     public String objects() {
-        return "jsfiles/object-js";
+        return "thHtml/object-js";
     }
 }
