@@ -66,3 +66,76 @@ let clone  = Object.assign({}, cloneObject());
 
 // reassign active inside clone into false
 Object.assign(clone, { active : false});
+
+function anyUser() {
+
+    let user = {};
+
+    user = {
+        name : "mohamed",
+        age : 27,
+        sayHi() {
+            document.write(this.name);
+            }
+        }
+
+    return user;
+}
+
+// when allocate new aUser 
+function aUser(name, state) {
+
+    //this = {}; 
+    this.name = name;
+    this.state = state;
+
+    // return this
+
+    /**
+     * or similar to 
+     *  let user = {name: name , state : state}
+     */
+
+     this.sayHi = function() {
+         document.write(`hi ${this.name}`);
+     }
+}
+
+// creating a constructor
+function docwrite() {
+
+    document.write(new aUser("ahmed", flase));
+
+    let user = new aUser("mohamed", true);
+}
+
+
+// optional chainning 
+
+function optionalChainning() {
+
+    //return undefined
+    aUser?.name?.address;
+    // works similar to 
+    if(aUser != null && aUser.name != null && aUser.name.address !=null) {
+    }
+
+    // best practice 
+    // auser and name is defined but address is optional 
+    aUser.name?.address;
+
+}
+
+function symboll() {
+
+    // special type symbol dosnt auto convert to a string 
+
+        let id1 = Symbol("id");
+        let id2 = Symbol("id");
+
+        alert(id1 == id2) // false
+        //alert (id1) // typeError cant convert symbol to string 
+
+        // convert symbol to string 
+        alert(id1.toString());
+}
