@@ -22,4 +22,9 @@ public class jsController {
     public String objects() {
         return "thHtml/object-js";
     }
+
+    @GetMapping("/array")
+    public String Arrays() {
+        return "thHtml/array-js";
+    }
 }
