@@ -30,6 +30,7 @@ public class FetchJoinDemo {
 			// start a transaction.
 			session.beginTransaction();
 			
+			//HQL // select from instructor - JOIN FETCH (and all associated columns) -> CourseList of the id 2 
 			Query<instructor> query = session.createQuery("select i from instructor i JOIN FETCH i.courseList where i.id=:instruct", instructor.class);
 			
 			query.setParameter("instruct", id);

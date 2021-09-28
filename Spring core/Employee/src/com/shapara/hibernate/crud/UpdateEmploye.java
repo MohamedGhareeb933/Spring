@@ -27,6 +27,7 @@ public class UpdateEmploye {
 			
 			Employe employe = session.get(Employe.class, 1);
 			employe.setFirstName("ahmed");
+			session.saveOrUpdate(args);
 			
 			// commit session
 			session.getTransaction().commit();

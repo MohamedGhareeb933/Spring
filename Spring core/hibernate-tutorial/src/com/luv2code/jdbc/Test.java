@@ -6,16 +6,15 @@ import java.sql.DriverManager;
 public class Test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		String JdbcUrl = "jdbc:mysql://localhost:3306/hb_student_tracker?useSSL=false&serverTimezone=UTC";
-		String user = "hbstudent";
-		String password = "hbstudent";
+		final String JDBCURL = "jdbc:mysql://localhost:3306/hb_student_tracker?useSSL=false&serverTimezone=UTC";
+		final String USER = "hbstudent";
+		final String PASSWORD = "hbstudent";
 		
 		try {
-			System.out.println("Connectig to Data Base" + JdbcUrl);
+			System.out.println("Connectig to Data Base" + JDBCURL);
 			
-			Connection myConnection = DriverManager.getConnection(JdbcUrl, user, password);
+			Connection myConnection = DriverManager.getConnection(JDBCURL, USER, PASSWORD);
 			
 			System.out.println("Connection Successful");
 		}

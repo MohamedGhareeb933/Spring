@@ -50,9 +50,11 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		
 	}
 	
+	// define Security userDetailManager Bean to provide create and update Auth.
 	@Bean
 	public UserDetailsManager userDetailsManager() {
 		
+		// define security JDBC userDeailManager and set the DataSource/DataBase to DataSource Bean in the Config File 
 		JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager();
 		
 		jdbcUserDetailsManager.setDataSource(securityDataSource);

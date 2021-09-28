@@ -31,11 +31,4 @@ public class AccountDAO {
 		return true;
 	}
 	
-	/*public void setName(Account account) {
-		account.setName("Mohamed");
-	}
-	
-	public void setLevel(Account account) {
-		account.setLevel("senior");
-	}*/
 }

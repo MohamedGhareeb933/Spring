@@ -33,7 +33,7 @@ public class Student {
 	@Column(name="email")
 	private String email;
 	
-	
+	// @Temporla and Temporal is used for Date Object Type 
 	@Column(name="date_of_birth")
     @Temporal(TemporalType.DATE)    
     private Date dateOfBirth;
@@ -95,6 +95,4 @@ public class Student {
 				+ ", dateOfBirth=" + DateUtil.strToDate(dateOfBirth) + "]";
 	}
 
-	
-	
 }

@@ -29,15 +29,17 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 
 		http.authorizeRequests()
-			.antMatchers("/").permitAll()
 			.antMatchers("/employees").hasRole("EMPLOYEE")
 			.antMatchers("/leaders/**").hasRole("MANAGER")
 			.antMatchers("/systems/**").hasRole("ADMIN")
+			.antMatchers("/").permitAll()
+
 			.and()
 			.formLogin()
 				.loginPage("/showMyLoginPage")
 				.loginProcessingUrl("/authenticateTheUser")
 				.permitAll()
+				
 			.and()
 			.logout()
 				.logoutSuccessUrl("/")  // after logout redirect to landing page (root)

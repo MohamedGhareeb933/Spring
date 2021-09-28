@@ -1,8 +1,7 @@
 package com.luv.hibernate.demo.entity;
 
-
-
 import java.util.ArrayList;
+
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -36,7 +35,7 @@ public class Course {
 	private Instructor instruct;
 	
 	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="course_id")
+	@JoinColumn(name  = "course_id", referencedColumnName = "id")
 	private List<Review> reviewList;
 	
 	Course() {

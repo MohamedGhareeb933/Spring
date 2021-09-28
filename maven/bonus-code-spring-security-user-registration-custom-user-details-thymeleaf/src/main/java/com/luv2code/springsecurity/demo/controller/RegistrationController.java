@@ -82,13 +82,16 @@ public class RegistrationController {
 		
 		// form validation
 		 if (theBindingResult.hasErrors()){
-			 return "registration-form";
-	        }
+			 theModel.addAttribute("roles", roles);
+			 
+			 return "registration-form";	
+	        	}
 
 		// check the database if user already exists
         User existing = userService.findByUserName(userName);
         if (existing != null){
-        	theModel.addAttribute("crmUser", new CrmUser());
+			theModel.addAttribute("crmUser", new CrmUser());
+    		theModel.addAttribute("roles", roles);
 			theModel.addAttribute("registrationError", "User name already exists.");
 
 			logger.warning("User name already exists.");

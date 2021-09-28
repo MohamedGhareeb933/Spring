@@ -20,7 +20,7 @@
 					method="POST">
 					
 		<!--  check for ERORR LOGIN -->
-		<c:if test="${param.error != null}"> <!--  if there's no error message  -->
+		<c:if test="${param.error != null}"> <!--  if there's error message | param.error == true -->
 			<i class="failed"> sorry ! invalid username/password </i>
 		</c:if> 
 					

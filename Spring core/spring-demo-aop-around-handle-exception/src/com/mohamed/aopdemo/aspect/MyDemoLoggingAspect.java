@@ -44,7 +44,7 @@ public class MyDemoLoggingAspect {
 			logger.warning("@Around Logger Warning " + e);
 			
 			// rethrowing the Exception.
-			throw e;
+			//throw e;
 		}
 		
 		long timeEnd = System.currentTimeMillis();

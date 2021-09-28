@@ -65,9 +65,3 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	  
 }
-
-
-
-
-
-

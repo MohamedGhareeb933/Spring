@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="01-springboot-demo/.mvn/wrapper"/>
+	<classpathentry kind="src" path="01-springboot-demo/src/main/java"/>
+	<classpathentry kind="src" path="01-springboot-demo/src/test/java"/>
+	<classpathentry kind="src" path="02-devtools-demo/.mvn/wrapper"/>
+	<classpathentry kind="src" path="02-devtools-demo/src/main/java"/>
+	<classpathentry kind="src" path="02-devtools-demo/src/test/java"/>
+	<classpathentry kind="src" path="03-devops-demo/.mvn/wrapper"/>
+	<classpathentry kind="src" path="03-devops-demo/src/main/java"/>
+	<classpathentry kind="src" path="03-devops-demo/src/test/java"/>
+	<classpathentry kind="src" path="04-springboot-props/.mvn/wrapper"/>
+	<classpathentry kind="src" path="04-springboot-props/src/main/java"/>
+	<classpathentry kind="src" path="04-springboot-props/src/test/java"/>
+	<classpathentry kind="src" path="05-springdemo-crud-hibernate-abi/.mvn/wrapper"/>
+	<classpathentry kind="src" path="05-springdemo-crud-hibernate-abi/src/main/java"/>
+	<classpathentry kind="src" path="05-springdemo-crud-hibernate-abi/src/test/java"/>
+	<classpathentry kind="src" path="06-springdemo-crud-jpa-abi/.mvn/wrapper"/>
+	<classpathentry kind="src" path="06-springdemo-crud-jpa-abi/src/main/java"/>
+	<classpathentry kind="src" path="06-springdemo-crud-jpa-abi/src/test/java"/>
+	<classpathentry kind="src" path="07-springdemo-crud-jpa-repository/.mvn/wrapper"/>
+	<classpathentry kind="src" path="07-springdemo-crud-jpa-repository/src/main/java"/>
+	<classpathentry kind="src" path="07-springdemo-crud-jpa-repository/src/test/java"/>
+	<classpathentry kind="src" path="08-springdemo-crud-rest-repo/.mvn/wrapper"/>
+	<classpathentry kind="src" path="08-springdemo-crud-rest-repo/src/main/java"/>
+	<classpathentry kind="src" path="08-springdemo-crud-rest-repo/src/test/java"/>
+	<classpathentry kind="lib" path="03-devops-demo/target/03-devops-demo-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="01-springboot-demo/target/classes"/>
+</classpath>

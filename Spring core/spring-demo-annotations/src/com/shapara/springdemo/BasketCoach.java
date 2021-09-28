@@ -23,7 +23,7 @@ public class BasketCoach implements Coach {
 	
 	/*
 	@Autowired  //  Field 
-	@Qualifier("randomService")
+	@Qualifier("randomService") // we use the qualifier if many class implements the fortuneservice interface for example randomService in out case and in case of use the qualifier we can remove the autowired
 	private FortuneService fortuneService;
 
 	*/

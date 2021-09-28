@@ -10,7 +10,7 @@ public class FortuneService {
 	public String getFortuneService() {
 		
 		try {
-			TimeUnit.SECONDS.sleep(5);
+			TimeUnit.SECONDS.sleep(1);
 		} catch (InterruptedException e) {
 
 			e.printStackTrace();

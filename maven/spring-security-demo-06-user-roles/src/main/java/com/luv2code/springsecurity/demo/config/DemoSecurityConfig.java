@@ -45,6 +45,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.logout().permitAll() // add logout support for default URL /logout.
 			.and()
 			.exceptionHandling().accessDeniedPage("/access-denied"); // handle the backdoor access using url without the authorization Role(s).
+			
 	}
 	
 }

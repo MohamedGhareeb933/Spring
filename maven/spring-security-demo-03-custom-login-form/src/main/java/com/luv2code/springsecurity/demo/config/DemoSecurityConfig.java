@@ -25,9 +25,12 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		.withUser(user.username("asser").password("test123").roles("MANAGER"))
 		.withUser(user.username("ayten").password("test123").roles("ADMIN"));
 	}
+	
 
-	// The most basic configuration defaults to automatically generating a login page at the URL "/login", redirecting to "/login?error" for authentication failure
-	// configure Security of web paths in application , login and logout such as custom login form 
+	/* The most basic configuration defaults to automatically generating a login page at the URL "/login", redirecting to "/login?error
+	 * " for authentication failure
+	 * configure Security of web paths in application , login and logout such as custom login form 
+	*/ 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests() // restrict access based on the httpServletRequest 

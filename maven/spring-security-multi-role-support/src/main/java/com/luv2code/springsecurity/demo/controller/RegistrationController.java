@@ -34,20 +34,23 @@ import com.luv2code.springsecurity.demo.user.CrmUser;
 @RequestMapping("/register")
 public class RegistrationController {
 	
+	// autowire with userDetailManager security bean to provide CRUD for users/auth 
 	@Autowired
 	private UserDetailsManager userDetailsManager;
 	
+	// passowrd salt 
 	private PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 	
 	private Logger logger = Logger.getLogger(getClass().getName());
 	
 	private Map<String, String> roles;
 	
+	// transform empty string to null
 	@InitBinder
 	public void initBinder(WebDataBinder dataBinder) {
 		
 		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
-		
+		// register the string trimmer to string property 
 		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
 	}	
 
@@ -85,14 +88,16 @@ public class RegistrationController {
 		
 		logger.info("Processing registration form for: " + userName);
 		
-		// form validation
+		// if the validation has error 
 		if (theBindingResult.hasErrors()) {
 
+			// define a new user and add to the crmUser model 
 			theModel.addAttribute("crmUser", new CrmUser());
 			
 			// add roles to the model for form display
 			theModel.addAttribute("roles", roles);
 			
+			// also add model attribute key ${registrationError} and error message as value
 			theModel.addAttribute("registrationError", "User name/password can not be empty.");
 			
 			logger.warning("User name/password can not be empty.");
@@ -132,7 +137,7 @@ public class RegistrationController {
         authorities.add(new SimpleGrantedAuthority("ROLE_EMPLOYEE"));
         
         // if the user selected role other than employee, 
-        // then add that one too (multiple roles)
+        // then add that role too (multiple roles)
         String formRole = theCrmUser.getFormRole();
 
         if (!formRole.equals("ROLE_EMPLOYEE")) {

@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.User.UserBuilder;
 @EnableWebSecurity // to extend WebSecurityConfigurerAdapter and overriding individual methods
 public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	// add a refrence to security data source
+	// auto wire the DataSource Bean in the demoAppConfig
 	@Autowired
 	private DataSource securityDataSource;
 	

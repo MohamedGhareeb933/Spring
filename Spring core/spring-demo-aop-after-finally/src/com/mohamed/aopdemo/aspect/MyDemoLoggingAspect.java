@@ -19,6 +19,7 @@ import com.mohamed.aopdemo.Account;
 @Component
 public class MyDemoLoggingAspect {
 	
+	// after calling findaccount method - comes after (after returning)
 	@After("execution(* com.mohamed.aopdemo.dao.AccountDAO.findAccount(..))")
 	public void AfterFinallyAddAccount(JoinPoint joinPoint) {
 		
@@ -28,7 +29,9 @@ public class MyDemoLoggingAspect {
 		
 	}
 
-	
+
+	// after throwing an exception(pointcut) // should handled in seprate class AOP Expression if the expresion is long 
+	// throwing - error returning 
 	@AfterThrowing(
 			pointcut="execution(* com.mohamed.aopdemo.dao.AccountDAO.findAccount(..)) )",
 			throwing ="error")
@@ -61,6 +64,7 @@ public class MyDemoLoggingAspect {
 	}
 
 
+	// ApplyNoGetterSetter which is collection and statement of aspect expressions
 	@Before("com.mohamed.aopdemo.aspect.AOPExpression.ApplyNoGetterSetter()")
 	public void addAccount(JoinPoint joinPoint) {
 		

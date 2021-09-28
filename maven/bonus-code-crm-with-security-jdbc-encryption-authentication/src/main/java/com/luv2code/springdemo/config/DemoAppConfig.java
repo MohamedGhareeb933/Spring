@@ -146,6 +146,7 @@ public class DemoAppConfig implements WebMvcConfigurer {
 		return Integer.parseInt(env.getProperty(propName));
 	}	
 	
+	// inject the setting of java SQL to hibernate factory bean (setting)
 	@Bean
 	public LocalSessionFactoryBean sessionFactory(){
 		

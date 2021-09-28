@@ -1,6 +1,7 @@
 package com.mohamed.aopdemo.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
+
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
@@ -15,7 +16,7 @@ public class MyDemoLogginAspect {
 	//@Before("execution(public void add*())") // Match Method Starting with Add using * Wildcard
 	//@Before("execution(void *())") // Match Method Based on Return Type - spring AOP only use public Access specifier
 	//@Before("execution(* add*())") // Match Method Based on any Return Type and method Starting with add
-	//@Before("execution(* com.mohamed.aopdemo.dao.*.*(..))") // Match based on Specific Package - .* any Class .* any Method.
+	//@Before("execution(* com.mohamed.aopdemo.dao.*.*(..))") // Match based on Specific Package - .* any Class .* any Method. any param
 	//@Before("execution(* com.mohamed.aopdemo.dao.*.add*(com.mohamed.aopdemo.Account))") // Match Based on Account Param.
 	@Before("execution(* com.mohamed.aopdemo.dao.*.add*(com.mohamed.aopdemo.Account, ..))") // first Param must be of type Account , any num of Argument follow
 	public void beforeAddAccount() {

@@ -28,6 +28,7 @@ public class MyDemoLoggingAspect {
 		
 		System.out.println("@Around Finally on Method: " + Method);
 		
+		// get current time in millis 
 		long timeBegin = System.currentTimeMillis();
 		
 		// Executing Method
@@ -42,6 +43,7 @@ public class MyDemoLoggingAspect {
 		
 		return result;
 	}
+	
 	
 	@After("execution(* com.mohamed.aopdemo.dao.AccountDAO.findAccount(..))")
 	public void AfterFinallyAddAccount(JoinPoint joinPoint) {

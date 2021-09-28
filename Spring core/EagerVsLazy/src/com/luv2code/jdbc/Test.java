@@ -5,9 +5,7 @@ import java.sql.DriverManager;
 
 public class Test {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public static void main(String[] args) {		
 		String JdbcUrl = "jdbc:mysql://localhost:3306/hb-03-one-to-many?useSSL=false&serverTimezone=UTC";
 		String user = "hbstudent";
 		String password = "hbstudent";

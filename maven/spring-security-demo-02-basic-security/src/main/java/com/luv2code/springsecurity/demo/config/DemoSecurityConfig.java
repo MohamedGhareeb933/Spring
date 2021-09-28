@@ -27,3 +27,4 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		.withUser(user.username("ayten").password("test123").roles("ADMIN"));
 	}
 }
+ 

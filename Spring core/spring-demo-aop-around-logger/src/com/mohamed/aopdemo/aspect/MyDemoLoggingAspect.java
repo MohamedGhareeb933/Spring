@@ -27,13 +27,14 @@ public class MyDemoLoggingAspect {
 	@Around("execution(* com.mohamed.aopdemo.service.FortuneService.getFortuneService(..))")
 	public Object aroundGetFortune(ProceedingJoinPoint ProJoinPoint) throws Throwable {
 		
+		// before calling the advise method 
 		String Method = ProJoinPoint.getSignature().toString();
 		
 		logger.info("@Around Finally on Method: " + Method);
 		
 		long timeBegin = System.currentTimeMillis();
 		
-		// Executing Method
+		// call advise method 
 		Object result = ProJoinPoint.proceed();
 		
 		long timeEnd = System.currentTimeMillis();
@@ -43,6 +44,7 @@ public class MyDemoLoggingAspect {
 		
 		logger.info("duration: " + duration / 1000.0 + " seconds");
 		
+		// return adivse method 
 		return result;
 	}
 	

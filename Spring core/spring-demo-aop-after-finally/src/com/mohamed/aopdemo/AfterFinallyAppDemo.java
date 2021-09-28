@@ -19,7 +19,7 @@ public class AfterFinallyAppDemo {
 		List<Account> AccountList = null;
 
 		try {
-			AccountList = accountDAO.findAccount(true);
+			AccountList = accountDAO.findAccount(false);
 			
 			System.out.println("List of Accounts: " + AccountList);
 			

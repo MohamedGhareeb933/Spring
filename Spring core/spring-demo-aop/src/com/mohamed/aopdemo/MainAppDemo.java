@@ -17,6 +17,7 @@ public class MainAppDemo {
 		
 		Account account = Context.getBean("account", Account.class);
 		
+		// AspectJ method will be called  before execution of addAccount method
 		accountDAO.addAccount(account, "Mohamed");
 		
 		membership.addMembership();
